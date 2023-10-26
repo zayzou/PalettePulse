@@ -1,10 +1,7 @@
-
-import React from 'react'
+import React from "react";
 
 const ColorList = () => {
-  return (
-    <div>ColorList</div>
-  )
-}
+  return <section className="colors"></section>;
+};
 
-export default ColorList
+export default ColorList;
