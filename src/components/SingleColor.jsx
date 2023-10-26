@@ -1,9 +1,13 @@
-import React from 'react'
-
-const SingleColor = () => {
+const SingleColor = ({ color }) => {
   return (
-    <div>SingleColor</div>
-  )
-}
+    <article
+      className={`color ${color.type === "tint" ? "false" : "color-light"}`}
+      style={{ backgroundColor: color.hexString() }}
+    >
+      <p className={"percent-value"}>{color.weight}</p>
+      <p className={"color-value"}>{color.hexString()}</p>
+    </article>
+  );
+};
 
-export default SingleColor
+export default SingleColor;
