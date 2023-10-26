@@ -4,7 +4,7 @@ const SingleColor = ({ color }) => {
   const copy = (hex) => {
     console.log(hex);
     navigator.clipboard.writeText(hex).then(() => {
-      toast(`${hex} copied to clipboard`);
+      toast(`${hex} copied to clipboard 🎨`);
     });
   };
   return (
